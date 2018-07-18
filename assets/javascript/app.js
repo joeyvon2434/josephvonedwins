@@ -95,6 +95,7 @@ function hideAll() {
     hidePortfolio();
     hideBio();
     hideSocial();
+    hideContact();
 };
 
 
@@ -139,4 +140,15 @@ function showSocial() {
 function hideSocial() {
     $('#social-bar').removeClass('position-h');
     $('#social-bar').addClass('position-g');
+};
+
+
+//show contact
+    function showContact() {
+        $('.contact-box').fadeIn(2000);
+    };
+
+//hide cotace
+function hideContact() {
+    $('.contact-box').fadeOut(1000);
 };

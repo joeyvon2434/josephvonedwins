@@ -440,10 +440,26 @@ body {
     }
 }
 
-
-
-
 .social-link {
-    
     cursor: pointer;
+}
+
+
+/* ####################################### */
+/* Contact section */
+
+.contact-box {
+    display: none;
+    position: fixed;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #023b41;
+    text-shadow: 1px 1px rgb(209, 209, 209);
+    
+}
+
+.contact-box p {
+    margin: 2%;
 }
