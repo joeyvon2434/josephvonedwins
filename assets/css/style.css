@@ -10,7 +10,17 @@ div {
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+#wrapper-color {
+    position: relative;
+    widows: 150%;
+    height: 150vh;
     background: rgb(153, 206, 211, 0.7);
+}
+
+#menu-button {
+    z-index: 3;
 }
 
 .menu {
@@ -116,12 +126,12 @@ body {
 #main-showcase-display {
     z-index: 2;
     position: fixed;
-    
     width: 40%;
     height: 120%;
     transform: rotate(-45deg);
     background: rgba(165, 165, 165, 0.5);
     box-shadow: -2px -2px 2px rgb(71, 71, 71);
+    border: 1px solid black;
     
 }
 
@@ -234,7 +244,7 @@ body {
 
 .portfolio-background {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 120px;
     height: 120px;
     transform: rotate(-45deg);
@@ -261,6 +271,7 @@ body {
     left: 0%;
     width: 120%;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .project-title {
@@ -297,4 +308,96 @@ body {
 #project-5 {
     top: 48%;
     left: 10%;
+}
+
+
+/* ####################################### */
+/* Bio section */
+
+#bio {
+    display: none;
+    position: fixed;
+    left: 15%;
+    width: 70%;
+    background-color: rgb(156, 156, 156, 0.7);
+    box-shadow: -2px -2px 2px rgb(71, 71, 71);
+    border: 1px solid black;
+}
+
+/*animate bio */
+
+.position-e {
+    top: 110%;
+    animation-name: hideBio;
+    animation-duration: 2s;
+}
+
+@keyframes hideBio {
+    0% {
+        top: 15%;
+    }
+    110% {
+        top: 110%;
+    }
+}
+
+.position-f {
+    top: 15%;
+    animation-name: showBio;
+    animation-duration: 2s;
+}
+
+@keyframes showBio {
+    0% {
+        top: 110%
+    }
+    100% {
+        top:15%;
+    }
+}
+
+
+/* end animate bio */
+
+#bio-text {
+    width: 90%;
+    margin: 3%;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.bio-image {
+    position: relative;
+    max-width: 33%;
+}
+
+#bio-image-1 {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+#bio-image-2 {
+    float: right;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#bio-text p {
+    margin-top: 2%;
+}
+
+
+/* ####################################### */
+/* Bio section */
+
+#social-bar {
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+}
+
+.social-link {
+    font-size: 30px;
+    cursor: pointer;
 }

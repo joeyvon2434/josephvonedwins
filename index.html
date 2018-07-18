@@ -16,6 +16,7 @@
 <body>
 
     <div id="wrapper">
+        <div id="wrapper-color"></div>
 
         <!--Navigation Menu-->
         <div class="menu">
@@ -24,11 +25,11 @@
                     <span id="menu-icon" class="fas fa-bars"></span>
                 </div>
             </div>
-            <div class="menu-item menu-toggle" data-value="home">Home</div>
-            <div class="menu-item menu-toggle" data-value="portfolio">Portfolio</div>
-            <div class="menu-item menu-toggle" data-value="bio">Bio</div>
-            <div class="menu-item menu-toggle" data-value="contact">Contact</div>
-            <div class="menu-item menu-toggle" data-value="social">Social</div>
+            <div class="menu-item menu-item-nav menu-toggle" data-value="home">Home</div>
+            <div class="menu-item menu-item-nav menu-toggle" data-value="portfolio">Portfolio</div>
+            <div class="menu-item menu-item-nav menu-toggle" data-value="bio">Bio</div>
+            <div class="menu-item menu-item-nav menu-toggle" data-value="contact">Contact</div>
+            <div class="menu-item menu-item-nav menu-toggle" data-value="social">Social</div>
 
         </div>
         <!--End Navigation Menu-->
@@ -41,23 +42,23 @@
 
         <!--Main Navigation Display on Welcome Screen-->
 
-        <div id="main-showcase-display" class="welcome show-showcase position-a" style="border: 1px solid black;">
+        <div id="main-showcase-display" class="welcome show-showcase position-a">
             <div id="block-1" class="link-block" data-value="portfolio">
                 <div class="block-text">Portfolio</div>
                 <div class="decoration"></div>
             </div>
 
-            <div id="block-2" class="link-block"  data-value="bio">
+            <div id="block-2" class="link-block" data-value="bio">
                 <div class="block-text">Bio</div>
                 <div class="decoration"></div>
             </div>
 
-            <div id="block-3" class="link-block"  data-value="contact">
+            <div id="block-3" class="link-block" data-value="contact">
                 <div class="block-text">Contact</div>
                 <div class="decoration"></div>
             </div>
 
-            <div id="block-4" class="link-block"  data-value="social">
+            <div id="block-4" class="link-block" data-value="social">
                 <div class="block-text">Social</div>
                 <div class="decoration"></div>
             </div>
@@ -69,28 +70,68 @@
         <!--Portfolio Section-->
 
         <div id="project-1" class='portfolio-background color-1'>
-            <img class='project-image' src='assets/images/Starfighter-Challenge.png'>
+            <img class='project-image' src='assets/images/Starfighter-Challenge.png'  onclick="location.href='https://joeyvon2434.github.io/unit-4-game/'">
             <div class='project-title'>Star Wars Starfighter Challenge</div>
         </div>
 
         <div id="project-2" class='portfolio-background color-2'>
-            <img class='project-image' src='assets/images/rick-and-morty-hangman.png'>
+            <img class='project-image' src='assets/images/rick-and-morty-hangman.png' onclick="location.href='https://joeyvon2434.github.io/word-guess-game/'">
             <div class='project-title'>Rick and Morty Hangman</div>
         </div>
 
         <div id="project-3" class='portfolio-background color-4'>
-            <img class='project-image' src='assets/images/Space-Trivia.png'>
+            <img class='project-image' src='assets/images/Space-Trivia.png' onclick="location.href='https://joeyvon2434.github.io/TriviaGame/'">
             <div class='project-title'>Space Trivia</div>
         </div>
 
         <div id="project-4" class='portfolio-background color-3'>
-            <img class='project-image' src='assets/images/Gif-API-Practice.png'>
+            <img class='project-image' src='assets/images/Gif-API-Practice.png' onclick="location.href='https://joeyvon2434.github.io/giph-API-page/'">
             <div class='project-title'>API Practice</div>
         </div>
 
         <div id="project-5" class='portfolio-background color-3'>
-            <img class='project-image' src='assets/images/train-schedule.png'>
+            <img class='project-image' src='assets/images/train-schedule.png' onclick="location.href='https://joeyvon2434.github.io/train-time/'">
             <div class='project-title'>Firebase Practice</div>
+        </div>
+
+
+        <!--Bio Section-->
+
+        <div id="bio" class="position-e">
+            <section id="bio-text">
+                <img id="bio-image-1" class="bio-image" src="assets/images/Profile.JPG">
+                <p>
+                    Traveller, runner, chemical engineer, skier, energy industry professional, and web developer. I attended the University of
+                    Florida where I earned a B.S. in Chemical Engineering. Following school, I started a career in the oil
+                    industry that took me to Baton Rouge, Louisiana for a little over 5 years before transferring to Billings,
+                    Montana. While working for one of the largest companies in the world, I was able to gain experience in
+                    project management and development, strategic planning, project economics, business operations, manufacturing,
+                    process optimization, and process monitoring. After a while, I started to feel a desire to push myself
+                    more, and to fulfill the desire to develop the creative side of my personality. I knew it was time to
+                    make a career change.
+                </p>
+                <img id="bio-image-2" class="bio-image" src="assets/images/skiing.jpg">
+                <p>
+                    I took the opportunity between my careers to fulfill a few of dreams. Ski, travel, live overseas, and learn a new language.
+                    After finishing the winter of 2017 in Montanta, I travelled Europe for 2 months before moving to Berlin
+                    to learn German. Ich spreche ein bisschen Deutsch. While in Germany I began to explore my interest in
+                    web development, and decided that it was the perfect balance between creativity and my technical skills.
+                    I knew I had found my next career. At the moment, I am living in Orlando, FL while I attend the UCF Coding
+                    Bootcamp, and I am looking forward to starting a new career in a well balnced -technical and creative-
+                    field.
+
+                </p>
+
+            </section>
+        </div>
+
+        <!--Social Section-->
+        <!--Small Social Bar-->
+
+        <div id="social-bar">
+            <span class="fab fa-instagram social-link" onclick="location.href='https://www.instagram.com/joeyvonedwins/?hl=en'"></span>
+            <span class="fab fa-linkedin social-link" onclick="location.href='https://www.linkedin.com/in/joseph-von-edwins-492054110/'"></span>
+            <span class="fab fa-github-square social-link" onclick="location.href='https://github.com/joeyvon2434'"></span>
         </div>
 
         <!--Close wrapper div-->

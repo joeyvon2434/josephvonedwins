@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     //Menu Links click function
     ////////////////////////////////////
-    $(document).on('click', '.menu-item', function(event) {
+    $(document).on('click', '.menu-item-nav', function(event) {
         hideShowcase();
         var navElement = $(this).attr('data-value');
         showClicked(navElement);
@@ -27,8 +27,6 @@ $(document).ready(function () {
         hideShowcase();
         var navElement = $(this).attr('data-value');
         showClicked(navElement);
-
-
 
     });//end showcase links function
 
@@ -59,6 +57,9 @@ function showShowcase() {
     $('#main-showcase-display').addClass('position-a');
     $('#name-card').removeClass('position-d');
     $('#name-card').addClass('position-c');
+
+    hideAll();
+    
 };
 
 //determines what to show base on click
@@ -66,17 +67,29 @@ function showClicked(navElement) {
     console.log(navElement);
     
     if (navElement == 'portfolio') {
+        hideAll();
         showPortfolio();
     } else if (navElement == 'bio') {
+        hideAll();
         showBio();
     } else if (navElement == 'contact') {
+        hideAll();
         showContact();
     } else if (navElement == 'social') {
+        hideAll();
         showSocial();
     } else if (navElement == 'home') {
+        hideAll();
         showShowcase();
-    }
+    } else {}
 };
+
+//hides everyting in the except home
+function hideAll() {
+    hidePortfolio();
+    hideBio();
+};
+
 
 
 //shows portfolio if it is chosen
@@ -86,4 +99,25 @@ function showPortfolio() {
     $('#project-3').delay(900).fadeIn(1500);
     $('#project-4').delay(1100).fadeIn(1500);
     $('#project-5').delay(1300).fadeIn(1500);
+};
+
+//hides portfolio
+
+function hidePortfolio() {
+    $('.portfolio-background').fadeOut(1000);
+};
+
+
+//shows bio section
+function showBio() {
+    $('#bio').show();
+    $('#bio').removeClass('position-e');
+    $('#bio').addClass('position-f');
+};
+
+//hides bio section
+function hideBio() {
+    $('#bio').removeClass('position-f');
+    $('#bio').addClass('position-e');
+    //$('#bio').fadeOut(2000);
 };
