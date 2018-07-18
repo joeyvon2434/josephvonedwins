@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
-    <title>Joseph Von Edwins</title>>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <title>Joseph Von Edwins</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
+    <div id="wrapper">
 
-    
+        <!--Navigation Menu-->
+        <div class="menu">
+            <div id="menu-button" class="menu-item">
+                <div id="menu-text">Menu
+                    <span id="menu-icon" class="fas fa-bars"></span>
+                </div>
+            </div>
+            <div class="menu-item menu-toggle" data-value="home">Home</div>
+            <div class="menu-item menu-toggle" data-value="portfolio">Portfolio</div>
+            <div class="menu-item menu-toggle" data-value="bio">Bio</div>
+            <div class="menu-item menu-toggle" data-value="contact">Contact</div>
+            <div class="menu-item menu-toggle" data-value="social">Social</div>
+
+        </div>
+        <!--End Navigation Menu-->
+
+        <!--Name Card Section an Slogan-->
+        <div id="name-card" class="welcome position-c">
+            <div id="name">Joseph Von Edwins</div>
+            <div id="slogan">Beautiful pages for a beautiful world</div>
+        </div>
+
+        <!--Main Navigation Display on Welcome Screen-->
+
+        <div id="main-showcase-display" class="welcome show-showcase position-a" style="border: 1px solid black;">
+            <div id="block-1" class="link-block" data-value="portfolio">
+                <div class="block-text">Portfolio</div>
+                <div class="decoration"></div>
+            </div>
+
+            <div id="block-2" class="link-block"  data-value="bio">
+                <div class="block-text">Bio</div>
+                <div class="decoration"></div>
+            </div>
+
+            <div id="block-3" class="link-block"  data-value="contact">
+                <div class="block-text">Contact</div>
+                <div class="decoration"></div>
+            </div>
+
+            <div id="block-4" class="link-block"  data-value="social">
+                <div class="block-text">Social</div>
+                <div class="decoration"></div>
+            </div>
+
+
+        </div>
+
+
+        <!--Portfolio Section-->
+
+        <div id="project-1" class='portfolio-background color-1'>
+            <img class='project-image' src='assets/images/Starfighter-Challenge.png'>
+            <div class='project-title'>Star Wars Starfighter Challenge</div>
+        </div>
+
+        <div id="project-2" class='portfolio-background color-2'>
+            <img class='project-image' src='assets/images/rick-and-morty-hangman.png'>
+            <div class='project-title'>Rick and Morty Hangman</div>
+        </div>
+
+        <div id="project-3" class='portfolio-background color-4'>
+            <img class='project-image' src='assets/images/Space-Trivia.png'>
+            <div class='project-title'>Space Trivia</div>
+        </div>
+
+        <div id="project-4" class='portfolio-background color-3'>
+            <img class='project-image' src='assets/images/Gif-API-Practice.png'>
+            <div class='project-title'>API Practice</div>
+        </div>
+
+        <div id="project-5" class='portfolio-background color-3'>
+            <img class='project-image' src='assets/images/train-schedule.png'>
+            <div class='project-title'>Firebase Practice</div>
+        </div>
+
+        <!--Close wrapper div-->
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript//app.js"></script>
 </body>
+
 </html>
