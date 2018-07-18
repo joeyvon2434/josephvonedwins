@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
     ////////////////////////////////////////
+    //On Load Functions
+    //////////////////////////////////////
+
+    $('#social-bar').fadeIn(2000);
+
+    ////////////////////////////////////////
     //Clicked Functions
     ////////////////////////////////////////
 
@@ -14,7 +20,7 @@ $(document).ready(function () {
 
     //Menu Links click function
     ////////////////////////////////////
-    $(document).on('click', '.menu-item-nav', function(event) {
+    $(document).on('click', '.menu-item-nav', function (event) {
         hideShowcase();
         var navElement = $(this).attr('data-value');
         showClicked(navElement);
@@ -59,13 +65,13 @@ function showShowcase() {
     $('#name-card').addClass('position-c');
 
     hideAll();
-    
+
 };
 
 //determines what to show base on click
 function showClicked(navElement) {
     console.log(navElement);
-    
+
     if (navElement == 'portfolio') {
         hideAll();
         showPortfolio();
@@ -81,13 +87,14 @@ function showClicked(navElement) {
     } else if (navElement == 'home') {
         hideAll();
         showShowcase();
-    } else {}
+    } else { }
 };
 
 //hides everyting in the except home
 function hideAll() {
     hidePortfolio();
     hideBio();
+    hideSocial();
 };
 
 
@@ -119,5 +126,17 @@ function showBio() {
 function hideBio() {
     $('#bio').removeClass('position-f');
     $('#bio').addClass('position-e');
-    //$('#bio').fadeOut(2000);
+};
+
+
+//show social
+function showSocial() {
+    $('#social-bar').removeClass('position-g');
+    $('#social-bar').addClass('position-h');
+};
+
+//hide social
+function hideSocial() {
+    $('#social-bar').removeClass('position-h');
+    $('#social-bar').addClass('position-g');
 };
