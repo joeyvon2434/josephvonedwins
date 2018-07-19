@@ -1,5 +1,5 @@
-div {
-    font-family: Arial, sans-serif;
+div, p, * {
+    font-family: 'Muli', Arial, sans-serif;
 }
 
 
@@ -14,8 +14,8 @@ div {
 
 #wrapper-color {
     position: relative;
-    widows: 150%;
-    height: 150vh;
+    widows: 120%;
+    height: 120vh;
     background: rgba(153, 206, 211, 0.7);
 }
 
@@ -69,8 +69,7 @@ body {
 #name-card {
     z-index: 2;
     position: fixed;
-    
-    color: #023b41;
+    color: rgb(12, 12, 131);
     text-shadow: 1px 1px rgb(209, 209, 209);
 }
 
@@ -184,6 +183,7 @@ body {
 
 
 .link-block {
+    z-index: 2;
     position: absolute;
     transform: rotate(45deg);
     width: 35%;
@@ -191,6 +191,10 @@ body {
     box-shadow: -2px -2px 2px rgb(71, 71, 71);
     border-radius: 10px 30px;
     cursor: pointer;
+}
+
+.link-block:hover {
+    opacity: 0.75;
 }
 
 .block-text {
@@ -308,6 +312,11 @@ body {
 #project-5 {
     top: 48%;
     left: 10%;
+}
+
+#project-6 {
+    top: 58%;
+    left: 38%;
 }
 
 
@@ -446,6 +455,10 @@ body {
     cursor: pointer;
 }
 
+.social-link:hover {
+    opacity: 0.7;
+}
+
 
 /* ####################################### */
 /* Contact section */
@@ -464,4 +477,43 @@ body {
 
 .contact-box p {
     margin: 2%;
+}
+
+/* ####################################### */
+/* Decorative Content */
+
+#decorative-box {
+    z-index: -1;
+    display: block;
+    position: fixed;
+    top: 30%;
+    left:-30%;
+    transform: rotate(45deg);
+    height: 50%;
+    width: 50%;
+    background: rgba(42, 158, 235, 0.5);
+}
+
+#decorative-box-2 {
+    z-index: -1;
+    display: block;
+    position: fixed;
+    top: -20%;
+    left: 15%;
+    transform: rotate(-45deg);
+    height: 40%;
+    width: 80%;
+    background: rgba(26, 158, 107, 0.5);
+}
+
+#decorative-box-3 {
+    z-index: -1;
+    display: block;
+    position: fixed;
+    top: -35%;
+    left: -15%;
+    transform: rotate(45deg);
+    height: 40%;
+    width: 40%;
+    background: rgba(50, 26, 158, 0.5);
 }

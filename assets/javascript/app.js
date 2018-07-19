@@ -107,6 +107,7 @@ function showPortfolio() {
     $('#project-3').delay(900).fadeIn(1500);
     $('#project-4').delay(1100).fadeIn(1500);
     $('#project-5').delay(1300).fadeIn(1500);
+    $('#project-6').delay(1100).fadeIn(1500);
 };
 
 //hides portfolio
