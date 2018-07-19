@@ -330,7 +330,7 @@ body {
     width: 70%;
     max-height: 75vh;
     overflow: scroll;
-    background-color: rgb(156, 156, 156, 0.7);
+    background-color: rgba(168, 168, 168, 0.7);
     box-shadow: -2px -2px 2px rgb(71, 71, 71);
     border: 1px solid black;
 }
@@ -517,3 +517,4 @@ body {
     width: 40%;
     background: rgba(50, 26, 158, 0.5);
 }
+
