@@ -319,6 +319,15 @@ body {
     left: 38%;
 }
 
+#github-repo {
+    top:70%;
+    left: 22%;
+}
+
+#github-repo .project-image {
+    width: 100%;
+}
+
 
 /* ####################################### */
 /* Bio section */
