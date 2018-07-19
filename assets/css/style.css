@@ -236,7 +236,7 @@ body {
     right: 0;
     width: 20%;
     height: 30%;
-    background-color: rgb(33, 33, 129);
+    background-color: rgba(33, 33, 129, 0.7);
     border-top-left-radius: 50px;
     border-bottom-right-radius: 10px;
     border: 1px solid rgb(95, 28, 150);
