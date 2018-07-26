@@ -319,6 +319,15 @@ body {
     left: 38%;
 }
 
+#project-7 {
+    top: 70%;
+    left: 52%;
+}
+
+#project-7 .project-image {
+    width: 100%;
+}
+
 #github-repo {
     top:70%;
     left: 22%;
