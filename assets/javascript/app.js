@@ -109,8 +109,9 @@ function showPortfolio() {
     $('#project-5').delay(1300).fadeIn(1500);
     $('#project-6').delay(1100).fadeIn(1500);
     $('#project-7').delay(900).fadeIn(1500);
-    $('#project-8').delay(1100).fadeIn(1500);
+    $('#project-8').delay(1100).fadeIn(1300);
     $('#project-9').delay(1300).fadeIn(1500);
+    $('#project-10').delay(1300).fadeIn(1100);
     $('#github-repo').delay(1300).fadeIn(1500);
 };
 
