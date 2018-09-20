@@ -113,6 +113,7 @@ function showPortfolio() {
     $('#project-9').delay(1300).fadeIn(1500);
     $('#project-10').delay(1300).fadeIn(1100);
     $('#project-11').delay(1300).fadeIn(1600);
+    $('#project-12').delay(1300).fadeIn(1500);
     $('#github-repo').delay(1300).fadeIn(1500);
 };
 
