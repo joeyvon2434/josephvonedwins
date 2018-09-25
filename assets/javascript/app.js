@@ -3,7 +3,7 @@ $(document).ready(function () {
     ////////////////////////////////////////
     //On Load Functions
     //////////////////////////////////////
-
+    $("#project-wrapper").hide();
     $('#social-bar').fadeIn(2000);
 
     ////////////////////////////////////////
@@ -55,7 +55,7 @@ function hideShowcase() {
     $('#name-card').addClass('position-d');
 };
 
-//shows shocase section
+//shows showcase section
 function showShowcase() {
     $('#main-showcase-display').removeClass('hide-showcase');
     $('#main-showcase-display').addClass('show-showcase');
@@ -66,6 +66,21 @@ function showShowcase() {
 
     hideAll();
 
+};
+
+//shows portfolio if it is chosen
+function showPortfolio() {
+    $('#project-wrapper').show();
+    $("#project-wrapper").addClass('show-portfolio');
+    $("#project-wrapper").removeClass('hide-portfolio');
+};
+
+//hides portfolio
+
+function hidePortfolio() {
+    $('#project-wrapper').addClass('hide-portfolio');
+    $('#project-wrapper').removeClass('show-portfolio');
+    $('#project-wrapper').hide(1000);
 };
 
 //determines what to show base on click
@@ -98,30 +113,6 @@ function hideAll() {
     hideContact();
 };
 
-
-
-//shows portfolio if it is chosen
-function showPortfolio() {
-    $('#project-1').delay(500).fadeIn(1500);
-    $('#project-2').delay(700).fadeIn(1500);
-    $('#project-3').delay(900).fadeIn(1500);
-    $('#project-4').delay(1100).fadeIn(1500);
-    $('#project-5').delay(1300).fadeIn(1500);
-    $('#project-6').delay(1100).fadeIn(1500);
-    $('#project-7').delay(900).fadeIn(1500);
-    $('#project-8').delay(1100).fadeIn(1300);
-    $('#project-9').delay(1300).fadeIn(1500);
-    $('#project-10').delay(1300).fadeIn(1100);
-    $('#project-11').delay(1300).fadeIn(1600);
-    $('#project-12').delay(1300).fadeIn(1500);
-    $('#github-repo').delay(1300).fadeIn(1500);
-};
-
-//hides portfolio
-
-function hidePortfolio() {
-    $('.portfolio-background').fadeOut(1000);
-};
 
 
 //shows bio section

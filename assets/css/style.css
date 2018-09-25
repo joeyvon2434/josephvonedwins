@@ -77,7 +77,6 @@ body {
 /* animation to move name-card */
 
 
-
 .position-c {
     top: 18%;
     left: 18%;
@@ -246,12 +245,53 @@ body {
 /* ####################################### */
 /* Portfolio section */
 
-.portfolio-background {
-    display: none;
+#project-wrapper {
     position: fixed;
-    width: 120px;
-    height: 120px;
-    transform: rotate(-45deg);
+    display: block;
+    top: 15%;
+    left: 0%;
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto 0 10%;
+    text-align: center;
+    overflow: scroll;
+    background: rgb(173, 194, 199);
+    background: rgba(165, 165, 165, 0.5);
+    border: 1px solid black;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+}
+
+.project-category {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5% auto;
+    width: 90%;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.category-header {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 30px;
+    color: rgb(12, 12, 131);
+    text-shadow: 1px 1px rgb(209, 209, 209);
+}
+
+.portfolio-background {
+    border: 1px solid black;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+}
+
+#project-9 img{
+    max-width: 300px;
+}
+
+#github-repo {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .color-1 {
@@ -272,96 +312,57 @@ body {
 
 .project-image {
     position: relative;
+    margin: 5% auto;
     left: 0%;
-    width: 120%;
-    transform: rotate(45deg);
+    width: 90%;
     cursor: pointer;
 }
 
 .project-title {
     position: relative;
     text-align: center;
-    top: -15%;
-    left: -57%;
-    transform: rotate(45deg);
-    width: 150%;
+    width: 100%;
     text-shadow: 1px 1px rgb(156, 156, 156);
     color: darkblue;
+    margin-bottom: 10px;
 }
 
-#project-1 {
-    top: 20%;
-    left: 15%;
+
+/* ####################################### */
+/*animations to show and hide the portfolio by toggling class attributes*/
+.show-portfolio {
+    animation-duration: 2s;
+    animation-name: showPortfolio;
 }
 
-#project-2 {
-    top: 14%;
-    left: 35%;
+@keyframes showPortfolio {
+    0% {
+        top: 15%;
+        left: -125%;
+    }
+    100% {
+        top: 15%;
+        left: 0%;
+    }
 }
 
-#project-3 {
-    top: 40%;
-    left: 27%;
+.hide-portfolio {
+    animation-duration: 2s;
+    animation-name: hidePortfolio;
 }
 
-#project-4 {
-    top: 34%;
-    left: 45%;
+@keyframes hidePortfolio {
+    0% {
+        top: 15%;
+        left: 0%;
+    }
+    100% {
+        top: 125%;
+        left:0%;
+    }
 }
 
-#project-5 {
-    top: 48%;
-    left: 10%;
-}
-
-#project-6 {
-    top: 58%;
-    left: 38%;
-}
-
-#project-7 {
-    top: 70%;
-    left: 52%;
-}
-
-#project-8 {
-    top: 14%;
-    left: 52%;
-}
-
-#project-9 {
-    top: 48%;
-    left: 57%;
-}
-
-#project-10 {
-    top: 28%;
-    left: 65%;
-}
-
-#project-11 {
-    top: 6%;
-    left: 70%;
-}
-
-#project-12 {
-    top: 55%;
-    left: 70%;
-}
-
-#project-7 .project-image {
-    width: 100%;
-}
-
-#github-repo {
-    top:70%;
-    left: 22%;
-}
-
-#github-repo .project-image {
-    width: 100%;
-}
-
+/*end animations for showcase */
 
 /* ####################################### */
 /* Bio section */
@@ -374,7 +375,7 @@ body {
     max-height: 75vh;
     overflow: scroll;
     background-color: rgba(168, 168, 168, 0.7);
-    box-shadow: -2px -2px 2px rgb(71, 71, 71);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
     border: 1px solid black;
 }
 
